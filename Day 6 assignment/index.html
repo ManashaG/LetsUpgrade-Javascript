@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6 Assignment</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color:#9696a8;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .table{
+            width: 100%;
+            margin-top: 25px;
+            border-radius: 6px;
+        }
+        th,td{
+            height: 40px;
+            padding: 5px;
+            text-align: center;
+        }
+        input{
+            margin-left: 100px;
+            padding: 10px;
+            margin-top: 50px;
+        }
+        .add{
+            margin-top: 50px;
+            padding: 10px;
+            margin-left: 25px;
+        }
+        h2{
+            margin-left: 20px;
+            text-align: center;
+        }
+        button{
+            padding: 10px;
+            margin-left: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>First Table</h2>
+    <table border="1" cellspacing="0" class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+                <th>Salary</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody class="tbody"></tbody>
+    </table>
+    <input type="text" placeholder="Start Searching Here" onkeyup="search()" class="inp">
+    <br>
+    <h2>Second Table</h2>
+    <div>
+        <form onsubmit="addbus(event)">
+            <input class="add" type="text" required placeholder="Name" id="name">
+            <input class="add" type="text" required placeholder="Source" id="source">
+            <input class="add" type="text" required placeholder="Destination" id="destination">
+            <input class="add" type="text" required placeholder="Number" id="number">
+            <input class="add" type="text" required placeholder="Passenger Capacity" id="passenger capacity">
+            <button type="submit">Add bus</button>
+        </form>
+    </div>
+    <table border="1" cellspacing="0" class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Source</th>
+                <th>Destination</th>
+                <th>Number</th>
+                <th>Passenger Capacity</th>
+            </tr>
+        </thead>
+        <tbody class="t2"></tbody>
+    </table>
+    <input type="text" placeholder="Start Searching Here" onkeyup="search1()" id="search">
+    <script src="index.js"></script>
+</body>
+</html>
